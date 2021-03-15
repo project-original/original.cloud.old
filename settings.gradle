@@ -1,0 +1,6 @@
+rootProject.name = 'original.cloud'
+include 'cloud-gate'
+include 'cloud-estate'
+include 'cloud-estate:cloud-estate-nozzle'
+findProject(':cloud-estate:cloud-estate-nozzle')?.name = 'cloud-estate-nozzle'
+
